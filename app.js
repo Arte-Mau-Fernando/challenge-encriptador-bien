@@ -14,7 +14,7 @@ function encriptar(){
     else{
         nuevoMensaje = codificacion(entrada);
         console.log(nuevoMensaje);
-        asignarTextoElemto('h2', '');
+        asignarTextoElemto('h2',' ');
         asignarTextoElemto ('#mostrarTexto',nuevoMensaje);
         document.getElementById('botonCopiar').removeAttribute("hidden");
         limpiarCaja();
@@ -45,7 +45,7 @@ function desencriptar(){
     }
     else{
         nuevoMensaje = decodificacion(entrada);
-        asignarTextoElemto('h2', '');
+        document.querySelector('h2').value = '';
         console.log(nuevoMensaje);
         asignarTextoElemto ('#mostrarTexto',nuevoMensaje);
         document.getElementById('botonCopiar').removeAttribute("hidden");
