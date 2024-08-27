@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="/assets/Logo.png" alt="Logo Alura">
+    </header>
+    <main class="presentacion__contenido">
+        <section class="presentacion__contenido__seccion__1">
+            <h1 class="presentacion__contenido__titulo">Ingrese el Texto Aquí</h1>
+            <h2 id="alerta"></h2>
+            <input type="text" class="presentacion__contenido__contenedor" id="mensajeUsuario">
+            <div>
+                <p class="presentacion__contenido__seccion__1__parrafo"><img src="assets/informacion.png" alt="Información Importante">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="presentacion__contenido__enlaces">
+                <button onclick="encriptar();" class="presentacion__contenido__seccion__1__enlace">Encriptar</button>
+                <button onclick="desencriptar();" class="presentacion__contenido__seccion__1__enlace">Desencriptar</button>
+            </div>
+        </section>
+        <section class="presentacion__contenido__seccion__2">
+            <div id="mostrarTexto" class="presentacion__contenido__seccion__2__areaTexto">
+                <img src="/assets/Muñeco.png" alt="En Espera de la Información" class="presentacion__contenido__seccion__2__imagen" id="imajenEspera">
+                <h2 class="presentacion__contenido__seccion__2__subtitulo">Ningún mensaje fue encontrado</h2>
+                <p class="presentacion__contenido__seccion__2__parrafo">Ingresa el texto que deseas encriptar o desencriptar.</p>
+            </div>
+            <div class="presentacion__contenido__enlaces">
+                <button onclick="copiar();" class="presentacion__contenido__seccion__2__enlace"  id="botonCopiar" hidden>Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__subtitulo">Creado por: <strong class="strong">Luis Fernando Arteaga Mauricio</strong></h2>
+        <div class="footer__enlaces">
+            <a href="https://www.linkedin.com/in/arteaga-mauricio-luisfernando" class="footer__enlaces__link"><img src="/assets/linkedin.png" alt="Linkedin"></a>
+            <a href="https://github.com/Arte-Mau-Fernando" class="footer__enlaces__link"><img src="/assets/github.png" alt="GitHub"></a>
+        </div>
+    </footer>
+    <script src="/app.js"></script>
+</body>
+</html>
