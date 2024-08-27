@@ -45,7 +45,7 @@ function desencriptar(){
     }
     else{
         nuevoMensaje = decodificacion(entrada);
-        document.querySelector('h2').value = '';
+        asignarTextoElemto('h2',' ');
         console.log(nuevoMensaje);
         asignarTextoElemto ('#mostrarTexto',nuevoMensaje);
         document.getElementById('botonCopiar').removeAttribute("hidden");
